@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: node-app
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/yamikarajput546/argocd
+    repoURL: https://github.com/yamikarajput546/node-argocd
     targetRevision: HEAD
-    path: yamls
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
