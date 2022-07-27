@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: nodejs-web-dep
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       name: nodejs-web-app
